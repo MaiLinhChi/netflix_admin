@@ -1,0 +1,42 @@
+.image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--black-color);
+}
+
+.description, .genre, .starring, .year, .limit, .duration {
+    font-size: 1.4rem;
+}
+
+.year, .limit, .duration {
+    width: 100px;
+}
+
+.edit-icon {
+    font-size: 2.2rem;
+    color: gold;
+}
+
+.icon {
+    font-size: 2rem;
+    color: red;
+    cursor: pointer;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.title {
+    font-size: 2.4rem;
+}

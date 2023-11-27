@@ -1,0 +1,47 @@
+.sidebar {
+    flex: 2;
+}
+
+.wrapper-list {
+    margin-bottom: 26px;
+    border-bottom: 1px solid var(--gray-color);
+    &:last-child {
+        border: none;
+    }
+
+    .title {
+        font-size: 2.4rem;
+        color: var(--gray-color);
+        margin-bottom: 16px;
+    }
+
+    .list {
+        list-style: none;
+    }
+
+    .item {
+        display: flex;
+        align-items: center;
+        padding: 12px;
+        margin-bottom: 10px;
+        border-radius: 4px;
+        font-size: 1.8rem;
+        transition: 0.5s;
+        cursor: pointer;
+
+        .icon {
+            margin-right: 20px;
+            font-size: 2rem;
+        }
+
+        &:hover {
+            background-color: var(--gray-color);
+        }
+    }
+}
+
+
+.active {
+    background-color: black;
+    display: block;
+}

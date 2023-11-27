@@ -1,0 +1,79 @@
+@import 'normalize.css';
+
+:root {
+    // color
+    --aqua-color: #45f3ff;
+    --gray-color: #8c8c8c;
+    --white-color: #fff;
+    --black-color: #000;
+    --darkblue-color: #5550bd;
+    --chartreuse-color: #3bb077;
+    --lightcoral-color: #d95087;
+    --slateblue-color: #2a7ade;
+    --steal-color: #008080;
+    
+    // font
+
+    // spacer
+    --spacer-two-side: 56px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-movie);
+    font-size: 1.6rem;
+    text-rendering: optimizespeed;
+    color: var(--text-color);
+    overflow-x: hidden;
+}
+
+button,
+input,
+textarea,
+[tabindex] {
+    outline: none;
+    border: none;
+}
+
+a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.one-line {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.two-line {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.three-line {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+
+.active {
+    background-color: var(--black-color);
+    color: var(--white-color);
+    display: block;
+}

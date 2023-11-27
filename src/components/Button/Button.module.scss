@@ -1,0 +1,59 @@
+.button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--black-color);
+    padding: 16px 34px;
+    user-select: none;
+    cursor: pointer;
+    background-color: transparent;
+    border-radius: 6px;
+}
+
+.small {
+    padding: 6px 8px;
+    min-width: 80px;
+    font-size: 1.4rem;
+}
+
+.aqua {
+    background-color: var(--aqua-color);
+    color: var(--black-color);
+    font-weight: 500;
+}
+
+.gray {
+    background-color: aliceblue;
+    color: var(--gray-color);
+}
+
+.steal {
+    background-color: var(--steal-color);
+    color: var(--white-color);
+}
+
+.darkblue {
+    background-color: var(--darkblue-color);
+    color: var(--white-color);
+}
+
+.disable {
+    opacity: 0.5;
+    cursor: none;
+    pointer-events: none;
+    user-select: none;
+}
+
+.left-icon {
+    display: inline-flex;
+    margin-right: 16px;
+    font-size: 2rem;
+}
+
+.right-icon {
+    display: inline-flex;
+    margin-left: 16px;
+    font-size: 2rem;
+}
