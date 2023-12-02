@@ -7,14 +7,15 @@ import style from "./Users.module.scss";
 import Table from "@/components/Table";
 import Button from "@/components/Button";
 import config from "@/config";
-import { AuthContext } from "@/context/authContext/AuthContext";
+import { AuthContext } from "@/context/auth/AuthContext";
 import * as userService from "@/services/users";
-import { LoadingContext } from "@/context/LoadingContext/Loading";
+import { LoadingContext } from "@/context/loading/LoadingContext";
 
 const Users = () => {
   const [users, setUsers] = useState([]);
   const { user } = useContext(AuthContext);
   const { setLoading } = useContext(LoadingContext);
+  const { authorization } = config;
   useEffect(() => {
     const getAllUser = async () => {
       try {
@@ -39,7 +40,6 @@ const Users = () => {
       console.log(error);
     }
   };
-
   const columns = useMemo(
     () => [
       {
@@ -103,16 +103,21 @@ const Users = () => {
         accessor: "_id",
         Cell: (props) => (
           <div className={clsx(style["wrapper-btn"])}>
-            <Button
-              to={`/user/${props.row?.original._id}`}
-              state={props.row?.original}
-            >
-              <AiFillEdit className={clsx(style["edit-icon"])} />
-            </Button>
-            <BsTrash
-              className={clsx(style["delete-icon"])}
-              onClick={() => handleDelete(props.row?.original._id)}
-            />
+            {authorization?.user?.update?.includes(user.role) && (
+              <Button
+                to={`/user/${props.row?.original._id}`}
+                state={props.row?.original}
+              >
+                <AiFillEdit className={clsx(style["edit-icon"])} />
+              </Button>
+            )}
+
+            {authorization?.user?.delete?.includes(user.role) && (
+              <BsTrash
+                className={clsx(style["delete-icon"])}
+                onClick={() => handleDelete(props.row?.original._id)}
+              />
+            )}
           </div>
         ),
       },

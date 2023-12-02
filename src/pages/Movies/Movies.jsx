@@ -7,7 +7,7 @@ import Table from "@/components/Table";
 import Button from "@/components/Button";
 import config from "@/config";
 import * as movieService from "@/services/movies";
-import { LoadingContext } from "@/context/LoadingContext/Loading";
+import { LoadingContext } from "@/context/loading/LoadingContext";
 
 const Movies = () => {
   const [movies, setMovies] = useState([]);

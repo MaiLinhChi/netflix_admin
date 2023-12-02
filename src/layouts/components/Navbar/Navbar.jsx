@@ -4,7 +4,7 @@ import clsx from "clsx";
 import { AiFillBell, AiOutlineGlobal } from "react-icons/ai";
 
 import style from "./Navbar.module.scss";
-import { AuthContext } from "@/context/authContext/AuthContext";
+import { AuthContext } from "@/context/auth/AuthContext";
 import config from "@/config";
 
 const Navbar = () => {

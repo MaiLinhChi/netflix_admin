@@ -1,7 +1,4 @@
-import routes from './routes';
+import routes from "./routes";
+import authorization from "./authorization";
 
-const config = {
-    routes,
-};
-
-export default config;
+export default { routes, authorization };
