@@ -61,7 +61,7 @@ const Login = () => {
             <i></i>
           </div>
           <Button
-            aqua
+            lightcoral
             className={clsx(style["custom-btn"])}
             onClick={handleLogin}
           >

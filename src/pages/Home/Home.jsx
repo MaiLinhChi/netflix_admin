@@ -3,8 +3,6 @@ import clsx from "clsx";
 
 import style from "./Home.module.scss";
 import Chart from "@/components/Chart";
-import { AuthContext } from "@/context/auth/AuthContext";
-import { logout } from "@/context/auth/AuthActions";
 import * as userService from "@/services/users";
 import { LoadingContext } from "@/context/loading/LoadingContext";
 
@@ -19,8 +17,8 @@ const Home = () => {
         setLoading(false);
         setUserStats(res);
       } catch (error) {
+        alert(error);
         setLoading(false);
-        console.log(error);
       }
     };
     getStats();

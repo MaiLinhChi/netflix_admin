@@ -22,7 +22,7 @@
         left: -50%;
         width: 400px;
         height: 500px;
-        background: linear-gradient(0deg, transparent, var(--aqua-color), var(--aqua-color));
+        background: linear-gradient(0deg, transparent, var(--lightcoral-color), var(--lightcoral-color));
         transform-origin: bottom right;
         animation: spin 8s linear infinite;
     }
@@ -34,7 +34,7 @@
         left: -50%;
         width: 380px;
         height: 400px;
-        background: linear-gradient(0deg, transparent, var(--aqua-color), var(--aqua-color));
+        background: linear-gradient(0deg, transparent, var(--lightcoral-color), var(--lightcoral-color));
         transform-origin: bottom right;
         animation: spin 8s linear infinite;
         animation-delay: 3s;
@@ -54,7 +54,7 @@
 
 .title {
     font-size: 3.2rem;
-    color: var(--aqua-color);
+    color: var(--lightcoral-color);
     font-weight: 400;
     text-align: center;
 }
@@ -72,12 +72,12 @@
         font-size: 1.6rem;
         background-color: transparent;
         z-index: 2;
-        color: var(--black-color);
+        color: var(--white-color);
     }
     
     .input:focus ~ .label, .input:valid ~ .label {
         font-size: 1.4rem;
-        color: var(--aqua-color);
+        color: var(--lightcoral-color);
         top: -10%;
         transform: translateY(-100%);
         left: 0;
@@ -100,7 +100,7 @@
         bottom: 0;
         width: 100%;
         height: 2px;
-        background-color: var(--aqua-color);
+        background-color: var(--lightcoral-color);
         border-radius: 4px;
         transition: 0.5s;
         pointer-events: none;

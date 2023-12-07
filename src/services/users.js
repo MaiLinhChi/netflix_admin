@@ -16,7 +16,7 @@ export const createUser = async (user) => {
 };
 
 export const updateUser = async (user, id) => {
-  const res = await httpRequest.Patch(`/users/${id}`, user);
+  const res = await httpRequest.Patch(`/users/update/${id}`, user);
   return res.data;
 };
 

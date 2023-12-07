@@ -1,0 +1,30 @@
+.form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form-group {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-right: 20px;
+
+    label {
+        font-size: 14px;
+        font-weight: 600;
+        color: rgb(150, 150, 150);
+    }
+
+    input, select {
+        margin-top: 10px;
+        padding: 10px;
+        border: 1px solid gray;
+        border-radius: 6px;
+        outline: none;
+    }
+}
+
+.custom-btn {
+    margin-top: 30px;
+}
